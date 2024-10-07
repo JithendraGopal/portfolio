@@ -1,0 +1,651 @@
+body{
+    background-color:#101630;
+    height: 500px;
+}
+.Nav_bar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color:#101630;
+
+}
+.jg_logo img{
+    height: 150px;
+    margin-left: 84px;
+}
+.navBar_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content:end;
+}
+.navBar_buttons a{
+    padding: 0 60px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    color:white;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+.navBar_buttons a:hover{
+    background-image: linear-gradient(180deg, #509DD6, #4935C2); 
+    color: transparent; /* Make the text color transparent */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* Required for non-webkit browsers */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.mainh1 h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    font-size: 4em;
+    background-image: linear-gradient(180deg, #509DD6, #4935C2); 
+    color: transparent; /* Make the text color transparent */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* Required for non-webkit browsers */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+.welcome_content h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    font-size: 5.67em;
+    background-image: linear-gradient(180deg, #509DD6, #4935C2); 
+    color: transparent; /* Make the text color transparent */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* Required for non-webkit browsers */
+    cursor: pointer; /* Changes cursor to pointer */
+
+}
+.welcome_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.welcome_text_1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.welcome_text_2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome_text h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+    font-size: 200%;
+    margin: 10px 0px;
+}
+.welcome_text h2{
+    margin: 10px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    font-size:250% ;
+    background-image: linear-gradient(180deg, #509DD6, #4935C2); 
+    color: transparent; /* Make the text color transparent */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* Required for non-webkit browsers */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+.welcome_text_bottom{
+    display: flex;
+    gap: 15px;
+    font-size: 100%;
+    margin-top: 0px;
+}
+/* changing the text */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    height: 100px; /* Adjust based on your layout */
+    margin-left: 60px;
+    padding-left: 50px;
+}
+
+.welcome_text_bottom_change {
+    height: 40px; /* Adjust height based on your text size */
+    overflow: hidden; /* Hide the overflowing text */
+}
+
+ul.v-slides {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    animation: slideText 10s ease-in-out infinite; /* Run animation infinitely */
+}
+
+.v-slide {
+    font-size: 200%; /* Adjust font size */
+    background-image: linear-gradient(180deg, #509DD6, #4935C2); 
+    color: transparent; /* Make the text color transparent */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* Required for non-webkit browsers */
+    cursor: pointer; /* Changes cursor to pointer */
+    height: 40px; /* Same height as container */
+    display: flex;
+    align-items: center; /* Center align text */
+    margin-left: 20px;
+}
+
+@keyframes slideText {
+    0%, 12.5% {
+        transform: translateY(0); /* Show first slide */
+    }
+    25%, 37.5% {
+        transform: translateY(-40px); /* Show second slide */
+    }
+    50%, 62.5% {
+        transform: translateY(-80px); /* Show third slide */
+    }
+    75%, 100% {
+        transform: translateY(-120px); /* Show fourth slide */
+    }
+}
+
+
+.welcome_text_bottom_change h3{
+    background-image: linear-gradient(180deg, #509DD6, #4935C2); 
+    color: transparent; /* Make the text color transparent */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* Required for non-webkit browsers */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+/* Styling for the image */
+.arrowImage {
+    width: 40px; /* Image size */
+    animation: moveUpDown 1.5s ease-in-out infinite; /* Smooth, continuous animation */
+}
+
+/* Keyframes for smooth, continuous up-and-down motion */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateY(20px); /* Move 20px down */
+    }
+    100% {
+        transform: translateY(0); /* Return to the original position */
+    }
+}
+.About_me_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.About_me_image{
+    margin-left: 84px;
+}
+.About_me_image img{
+    width: 110%;
+    height: 100%;
+
+}
+.About_me_cont {
+    display: flex;
+}
+.About_me_text{
+    margin-left: 6%;
+    margin-right:10%;
+}
+.About_me_text p{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+.skill_contents{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.experience_div{
+    background-color: #101630;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 529px;
+    height: auto;
+    margin-left: 100px;
+    border-radius: 100px;
+    border-color: white;
+    border-style: solid;
+    border-width: 6px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    
+}
+.experience_div h3{
+    font-size: 36px;
+}
+.experience_div ul{
+    padding-right:60px ;
+    margin: 0px 40px;
+    margin-bottom: 40px;
+}
+.experience_div li{
+    padding: 10px 0px;
+}
+.skill_contents_2{
+    width: 184px;
+}
+.skill_contents_2 img{
+    width: auto;
+    height: 1600px;
+}
+.skill_img2{
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.skill_img2 img{
+    width: 234px;
+}
+.skill_img1{
+    margin-left: 20%;
+}
+.skill_img1 img{
+    width: 295px;
+}
+.skill_div{
+    margin-left: 0px;
+    margin-top: 100px;
+}
+.skill_img3{
+    margin-left:25%;
+    margin-top: 60px;
+    
+}
+.skill_img3 img{
+    width: 300px;
+    height: auto;
+}
+.Internships{
+    margin-left: 0px;
+    margin-top: 60px;
+}
+/* collageb images */
+
+.image-collage{
+    margin-top: 100px;
+}
+
+/* Container for the image slider */
+.image-slider {
+    margin-top: 30px;
+    width: 100%; /* Adjust width to your preference */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider img{
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #101630;
+    border-width: 4px;
+}
+
+/* Wrapper for the images */
+.slider-wrapper {
+    display: flex;
+    width: calc(200%); /* Double the width to handle duplicate images */
+    animation: scrollImages 60s linear infinite; /* Smooth infinite scroll */
+}
+
+/* Style for the images */
+.slider-img {
+    width: 25%; /* 8 images visible at a time (4 at once with duplication) */
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Animation for smooth scrolling */
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll left through both sets of images */
+    }
+}
+/* second image animation */
+
+/* Wrapper for the images */
+.slider-wrapper2 {
+    display: flex;
+    width: calc(200%); /* Double the width to handle duplicate images */
+    animation: scrollImages2 80s linear infinite; /* Smooth infinite scroll */
+}
+
+/* Style for the images */
+.slider-img {
+    width: 25%; /* Adjust as needed for your layout */
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Animation for smooth scrolling (right to left) */
+@keyframes scrollImages2 {
+    0% {
+        transform: translateX(-100%); /* Start from the end */
+    }
+    100% {
+        transform: translateX(0); /* Move to the start position (right to left) */
+    }
+}
+.Certificate_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificate_ani{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+.next_butt img{
+    width: 40px;
+    margin: 0px 60px;
+}
+.certificate_div{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, #509DD6, #4935C2); 
+    height: 410px;
+}
+.certificate_img{
+    display: flex;
+    justify-content: center;
+}
+.certificate_div img{
+    width:300px;
+    height: 230px;
+    padding: 30px 10px;
+}
+.certificate_title{
+    display: flex;
+    justify-content: center;
+}
+.certificate_title h4{
+    color: white;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    margin: 21px 10%;
+    text-align: center;
+}
+.certificate_div {
+    transition: opacity 0.9s ease-in-out;
+}
+
+.fade {
+    opacity: 20;
+}
+.next_butt_right{
+    animation: right_left 1.5s ease-in-out infinite; /* Smooth, continuous animation */
+}
+/* Keyframes for smooth, continuous right-left motion */
+@keyframes right_left {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    50% {
+        transform: translateX(20px); /* Move 20px down */
+    }
+    100% {
+        transform: translateX(0); /* Return to the original position */
+    }
+}
+.next_butt_left{
+    animation: left_right 1.5s ease-in-out infinite;
+}
+/* Keyframes for smooth, continuous left-right motion */
+@keyframes left_right {
+    0% {
+        transform: translateX(20px); /* Start position */
+    }
+    50% {
+        transform: translateX(0px); /* Move 20px down */
+    }
+    100% {
+        transform: translateX(20px); /* Return to the original position */
+    }
+}
+/* projects section animation and images */
+.projects{
+    margin-top: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects_itms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.project_contet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 901.546875px;
+    background-image: linear-gradient(90deg, #509DD6, #4935C2);
+    border-radius: 30px;
+    height: 393.4375px;
+    padding-bottom: 30px;
+}
+.project_contet h3{
+    color: white;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    text-align: center;
+}
+.project_contet_parp p{
+ width: 96%;
+}
+.project_contet_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+.project_contet_img img{
+    width: 231.953125px;
+    height: 286.90625px;
+}
+.project_contet_par{
+    margin: 0px 30px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 300;
+    color: white;
+}
+.scroler{
+    width: 60%;
+    height: 10px;
+    border-radius: 60px;
+    background-color:#101630;
+    border-style: solid;
+    margin-top: 10px;
+    border-color: #509DD6;
+    display: flex;
+
+}
+.scroler_div {
+    width: 10%;
+    border-style: solid;
+    background-color: transparent; /* Initially transparent */
+    border-radius: 40px;
+    display: inline-block; /* Ensure the scrollers are inline */
+}
+#scroler1 {
+    width: 10%;
+    border-style: solid;
+    background-color: #509DD6 ; /* Initially transparent */
+    border-radius: 40px;
+    display: inline-block;
+}
+
+/* contact me section  */
+.Contact_me
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.Contact_me_contents{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    margin-top: 150px;
+}
+.Contact_div{
+    display: flex;
+    flex-direction: column;
+    width:15%;
+    background-color: #639BD1;
+    align-items: center;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 300;
+    color: white;
+    border-radius: 30px;
+}
+.Contact_div a{
+    color: white;
+}
+.Contact_div img{
+    width: 40%;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: white;
+}
+.icon_gif{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer Section */
+footer{
+    background-image: linear-gradient(180deg,#4935C2 0%,#509DD6); 
+    margin-top: 250px;
+}
+.Footer_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer_Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer_Logo img{
+    width: 15%;
+}
+.Fotter_text_jithendra{
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    color: #101630;
+}
+.Footer_Im h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+.footer_slider li{
+    color: #101630;
+}
+.Link_section{
+    width: 100%;
+    display: flex;
+}
+.Link_section h3{
+    color:white;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    margin: 30px;
+}
+.Link_section1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    font-family: "Roboto", sans-serif;
+}
+.Link_section1 div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Link_section2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+}
+.Link_section2 div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Follow_Me_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Follow_icon{
+    display: flex;
+    margin-bottom: 150px;
+}
+.Follow_icon img{
+    width: 30px;
+    margin: 10px;
+}
+.Follow_Me_content_h2 h1{
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    color: white;
+}
+ 
+
+/* test code for test.html */
+
