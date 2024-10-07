@@ -168,44 +168,4 @@ document.querySelector(".downArrow").addEventListener("click",()=>{
 });
 // project section
 
-let toggle = 0; // Counter to toggle between the images
 
-$(".next_butt_right_project").click(function() {
-    console.log("Current Toggle Value:", toggle); // Debug: Track the toggle state
-
-    // Fade out the current content before updating it
-    $(".project_contet_imge, .project_contet_h3, .project_contet_parp").fadeOut(300, function() {
-        
-        if (toggle === 0) {
-            // First image and content
-            console.log("Displaying 1.png"); // Debug: Show which image is being displayed
-            $(".project_contet_imge").attr("src", "./Projects_img/2.png");
-            $(".project_contet_h3").text("Smart Street Lighting System using IoT");
-            $(".project_contet_parp").html("Our project revolutionizes urban street light management using IoT technology. </br>Key Features: </br> 1. Remote monitoring and control through app/website </br> 2. Energy-efficient adaptive lighting control </br> 3. Real-time sensor data for optimized performance </br> 4. User-friendly interface for easy management </br> 5. Robust security against cyber threats </br> Benefits: </br> 1. Reduced energy waste </br> 2. Enhanced public safety </br> 3. Efficient maintenance </br> 4. Integration with smart city initiatives <br/>");
-            $("#scroler2").css("background-color", "#509DD6");
-            $("#scroler1").css("background-color", "#101630");
-            toggle = 1; // Move to next state
-        } else if (toggle === 1) {
-            // Second image and content
-            console.log("Displaying 2.png"); // Debug: Show which image is being displayed
-            $(".project_contet_imge").attr("src", "./Projects_img/3.png");
-            $(".project_contet_h3").text("Automated Vein Detection Device");
-            $(".project_contet_parp").html("This project enhances healthcare diagnostics by automating vein detection. </br>Key Features: </br> 1. High precision vein detection </br> 2. Non-invasive technology </br> 3. Portable and easy to use </br> 4. Applicable for healthcare professionals </br> Benefits: </br> 1. Easier and safer vein detection </br> 2. Reduced patient discomfort </br> 3. Time-saving for medical staff </br> 4. Ideal for emergency situations <br/>");
-            $("#scroler2").css("background-color", "#101630");
-            $("#scroler1").css("background-color", "#509DD6");
-            toggle = 2; // Move to next state
-        } else if (toggle === 2) {
-            // Third image and content
-            console.log("Displaying 3.png"); // Debug: Show which image is being displayed
-            $(".project_contet_imge").attr("src", "./Projects_img/1.png");
-            $(".project_contet_h3").text("Another Project Title");
-            $(".project_contet_parp").html("Description for the third project. </br>Key Features: </br> 1. Feature one </br> 2. Feature two </br> 3. Feature three </br> 4. User-friendly interface for easy management </br> 5. More security features </br> Benefits: </br> 1. Benefit one </br> 2. Benefit two </br> 3. Benefit three </br> 4. Integration with another system <br/>");
-            $("#scroler2").css("background-color", "#509DD6");
-            $("#scroler1").css("background-color", "#101630");
-            toggle = 0; // Reset to 0 to loop back to the first image
-        }
-
-        // Fade the content back in smoothly
-        $(".project_contet_imge, .project_contet_h3, .project_contet_parp").fadeIn(300);
-    });
-});
